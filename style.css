@@ -1,0 +1,117 @@
+/* BODY */
+body {
+    background-color: #C7FFF7;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GLOBAL BOX-SIZING */
+* {
+    box-sizing: border-box; /* Includes padding and borders in element width */
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    width: calc(100% - 40px); /* Adjusts width to account for margins */
+    padding: 20px;
+    margin: 20px; /* Adds margin around the header */
+    border: 1px solid #000;
+    background: #F41CFF;
+    color: #000;
+    font-size: 2rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+/* PARENT CONTAINER */
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 150px;
+
+}
+
+/* COLUMNS 
+#cats, #dogs, #text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1; /* Makes three equal columns
+    text-align: left;
+
+
+     /* Makes colums scrollable if they are longer than 100vh;
+    height: 100vh;-
+    overflow: scroll;
+}
+*/
+
+#cats, #dogs, #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* More consistent spacing */
+    flex-basis: 30%; /* Each column takes 30% of the width */
+    flex-grow: 1; /* Allows the columns to grow if there's extra space */
+    max-width: 33%; /* Ensures the columns don't exceed 33% */
+    text-align: left;
+    height: calc(100vh - 200px); /* Adjusted for header and margins */
+    overflow-y: auto; /* Scroll vertically if content overflows */
+}
+
+/* IMAGES */
+img.cat, img.dog {
+    width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+
+    /*more styling, if you feel like it */
+    border-radius: 30px;
+    border: 2px solid rgb(255, 0, 247);
+}
+
+
+#intro, p {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+
+    height: 30px;
+    padding: 20px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* LINKS */
+a {
+    border: 1px solid #000;
+    background: #F41CFF;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background: #000;
+    color: #FFF;
+}
