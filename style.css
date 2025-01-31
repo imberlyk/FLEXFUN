@@ -56,8 +56,9 @@ header {
     flex: 1; /* Makes three equal columns */
     text-align: left;    
     height: 100vh;
+    overflow:scroll;
 
-    overflow: scroll;
+
 }
 
 
@@ -66,7 +67,7 @@ header {
 
 
 /* IMAGES */ /*ALARM IMAGES FALSCH GETAGGED*/
-img.catimg, img.dogimg {
+.catimg, .dogimg {
     width: 100%; /* Ensures images are responsive */
     height: auto; /* Maintains aspect ratio */
 
